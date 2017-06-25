@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -6,17 +6,14 @@ import Scroll from 'react-scroll'
 import NavItem from './navItem'
 import ElementItem from './elementItem'
 
-require('./css/index.css');
+require('./css/index.css')
 
-const Link       = Scroll.Link;
-const DirectLink = Scroll.DirectLink;
-const Element    = Scroll.Element;
-const Events     = Scroll.Events;
-const scroll     = Scroll.animateScroll;
-const scrollSpy  = Scroll.scrollSpy;
+const Events     = Scroll.Events
+const scroll     = Scroll.animateScroll
+const scrollSpy  = Scroll.scrollSpy
 
 const durationFn = function(deltaTop) {
-    return deltaTop;
+    return deltaTop
 };
 
 class Section extends React.Component{
@@ -27,35 +24,35 @@ class Section extends React.Component{
       this.state =
     {
       items: ['welcome', 'map', 'program'],
-    };
+    }
   }
 
   componentDidMount() {
 
     Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
+      console.log("begin", arguments)
     });
 
     Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
+      console.log("end", arguments)
     });
 
-    scrollSpy.update();
+    scrollSpy.update()
 
   }
   scrollToTop() {
-    scroll.scrollToTop();
+    scroll.scrollToTop()
   }
   componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
+    Events.scrollEvent.remove('begin')
+    Events.scrollEvent.remove('end')
   }
   render () {
-    let navItems = this.state.items;
+    let navItems = this.state.items
     navItems = navItems.map((item, index) =>
       (<NavItem item={item} key={index}/>)
     )
-    let elementItems = this.state.items;
+    let elementItems = this.state.items
     elementItems = elementItems.map((item, index) =>
       (<ElementItem item={item} key={index}/>)
     )
@@ -76,12 +73,12 @@ class Section extends React.Component{
         </div>
         <a onClick={this.scrollToTop}>To the top!</a>
       </div>
-    );
+    )
   }
-};
+}
 
 
 ReactDOM.render(
   <Section />,
   document.querySelector('.onepager')
-);
+)
