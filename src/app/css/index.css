@@ -3,7 +3,7 @@
 	padding: 0 !important;
 }
 .element {
-	height:1000px;
+	height:700px;
 	background-color: #ededed;
 	font-size: 45px;
 	border-top:1px solid #000;
@@ -12,5 +12,53 @@
 }
 
 .active {
-	color:red !important;
+	color: #ffe !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ccc;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FEB769;
+}
+
+.navbar{
+	background-color: #0E648E;
+	opacity: 0.9;
+}
+
+.element.welcome, .active.welcome{
+	background-color: #FEB769;
+}
+
+.element.where, .active.where{
+	background-color: #0E4458;
+}
+
+.element.where > div{
+	background-color: blue;
+	width: 100px;
+	color:red;
+	transition: width 2s;
+}
+
+.element.where > div:hover{
+	width: 1000px;
+}
+
+.element.program, .active.program{
+	background-color: #A6291C;
+}
+
+.element.foodanddrinks, .active.foodanddrinks{
+	background-color: #8EAF8B;
+}
+
+.element.pictures, .active.pictures{
+	background-color: #FEB769;
+}
+
+.element.gift, .active.gift{
+	background-color: #0E4458;
 }
