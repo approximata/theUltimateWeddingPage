@@ -16,6 +16,9 @@ const durationFn = function(deltaTop) {
     return deltaTop
 }
 
+const welcome = document.querySelector('.element.welcome')
+
+
 class Section extends React.Component{
 
   constructor (props){
@@ -23,11 +26,12 @@ class Section extends React.Component{
       this.scrollToTop = this.scrollToTop.bind(this)
       this.state =
       {
-      // items: ['welcome', 'where', 'program', 'foodanddrinks', 'pictures', 'accommondation', 'gift' ]
         items: [
           { 'title': 'welcome',
             'name': 'welcome',
-            'subTitle1': 'panni és máté úttörő lagzi fesztivál'
+            'subTitle1': 'panni és máté úttörő lagzi fesztivál',
+            'images': ['./app/images/welcome/002.jpg', './app/images/welcome/003.jpg'],
+            'index': 0
           },
           {
             'title': 'where',
@@ -36,35 +40,46 @@ class Section extends React.Component{
             'content1': '4-es altábor',
             'subTitle2': '2017 július 15 szombat',
             'content2': '17:00 érkezés',
-            'link': ''
+            'link': '',
+            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'index': 0
           },
           {
             'title': 'program',
-            'name': 'program'
+            'name': 'program',
+            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'index': 0
           },
           {
             'title': 'foodanddrinks',
-            'name': 'kajapia'
+            'name': 'kajapia',
+            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'index': 0
           },
           {
             'title':'pictures',
-            'name': 'képek'
+            'name': 'képek',
+            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'index': 0
           },
           {
             'title':'accommondation',
-            'name': 'szállás'
+            'name': 'szállás',
+            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'index': 0
           },
           {
             'title': 'gift',
-            'name': 'ajándék'
+            'name': 'ajándék',
+            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'index': 0
           }
-        ]
+        ],
       }
 
   }
 
   componentDidMount() {
-
 
     Events.scrollEvent.register('begin', function() {
       console.log("begin", arguments)
@@ -82,13 +97,17 @@ class Section extends React.Component{
     scroll.scrollToTop()
   }
 
-
+  // _onMouseMove(e) {
+  //   console.log(e.screenX, e.screenY)
+  //   let index = 0
+  // }
 
   componentWillUnmount() {
     Events.scrollEvent.remove('begin')
     Events.scrollEvent.remove('end')
   }
   render () {
+
     let items = this.state.items
     let navItems = []
     let elementItems = []
@@ -98,7 +117,7 @@ class Section extends React.Component{
     )
 
     elementItems = items.map((item, index) =>
-      (<ElementItem item={item} key={index}/>)
+      (<ElementItem item={item} key={index} _onMouseMove={this._onMouseMove}/>)
     )
 
     return (
@@ -112,7 +131,7 @@ class Section extends React.Component{
             </div>
           </div>
         </nav>
-        <div>
+        <div name="mainElement" >
           {elementItems}
         </div>
         <a onClick={this.scrollToTop}>To the top!</a>
