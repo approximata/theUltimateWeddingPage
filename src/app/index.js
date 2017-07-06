@@ -117,7 +117,7 @@ class Section extends React.Component{
     )
 
     elementItems = items.map((item, index) =>
-      (<ElementItem item={item} key={index} _onMouseMove={this._onMouseMove}/>)
+      (<ElementItem item={item} key={index}/>)
     )
 
     return (

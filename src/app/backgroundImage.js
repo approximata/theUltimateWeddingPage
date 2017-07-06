@@ -1,28 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+class BackgroundImage extends React.Component{
+  constructor (props){
+    super(props)
 
-const BackgroundImage = ({ images }) => {
-  let index = 0
-  const _onMouseMove = (e) => {
-    let mouseIndex = 0
-    console.log(images);
-    mouseIndex = e.screenX
-    index = mouseIndex % images.length
-    console.log(index)
+    this.state = {'index': 0}
   }
-
-
-  return (
-    <div className="background-image" onMouseMove={_onMouseMove}>
-      <img src={images[index]} alt="currentImg"/>
-    </div>
-  )
+  _onMouseMove(e){
+    let index = e.screenX % this.props.images.length
+    this.setState({'index': index})
+  }
+  render(){
+    return (
+      <div className="background-image" onMouseMove={this._onMouseMove.bind(this)}>
+        <img src={this.props.images[this.state.index]} alt="currentImg"/>
+      </div>
+    )
+  }
 }
+
 
 BackgroundImage.propTypes = {
   images: PropTypes.array
-  // _onMouseMove: PropTypes.func.isRequired
+  //  _onMouseMove: PropTypes.func.isRequired
 }
 
 export default BackgroundImage
