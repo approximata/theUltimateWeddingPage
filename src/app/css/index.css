@@ -1,11 +1,4 @@
-:root {
-      --base: #ffc600;
-      --spacing: 10px;
-      --blur: 10px;
-			--background-color: #0E648E;
-			--url: url('../images/welcome/001.jpg');
-			--z-index: 1, 2, 3;
-    }
+
 
 .body {
 	margin: 0 !important;
@@ -38,12 +31,13 @@
 	opacity: 0.9;
 }
 
-.element.welcome, .active.welcome{
+.element.welcome,.active.welcome{
 	background-color: #FEB769;
 }
 
 .element.welcome {
-	/*background-image: url('../images/welcome/002.jpg')*/
+	/*background-image: url('../images/welcome/002.jpg');*/
+  /*transition: background-image 0.3s ease-in-out;*/
 }
 
 .element.where, .active.where{

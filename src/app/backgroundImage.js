@@ -8,13 +8,17 @@ class BackgroundImage extends React.Component{
     this.state = {'index': 0}
   }
   _onMouseMove(e){
-    let index = e.screenX % this.props.images.length
+    let divided = e.screenX / 11
+    let index = Math.floor(divided % this.props.images.length)
+    console.log(index);
     this.setState({'index': index})
   }
   render(){
     return (
       <div className="background-image" onMouseMove={this._onMouseMove.bind(this)}>
-        <img src={this.props.images[this.state.index]} alt="currentImg"/>
+      <p>"sdadasdas"</p>
+      <img src={this.props.images[this.state.index]} alt="currentImg"/>
+
       </div>
     )
   }
@@ -23,7 +27,7 @@ class BackgroundImage extends React.Component{
 
 BackgroundImage.propTypes = {
   images: PropTypes.array
-  //  _onMouseMove: PropTypes.func.isRequired
 }
 
 export default BackgroundImage
+// <img src={this.props.images[this.state.index]} alt="currentImg"/>
