@@ -28,8 +28,10 @@ class Section extends React.Component{
       {
         items: [
           { 'title': 'welcome',
-            'name': 'welcome',
-            'subTitle1': 'panni és máté úttörő lagzi fesztivál',
+            'name': '#welcome',
+            'subTitle1': ' házasodunk',
+            'icon': 'glyphicon glyphicon-heart-empty',
+            'content1': 'panni és máté úttörő lagzi fesztivál',
             'images': ['./app/images/welcome/001.jpg','./app/images/welcome/002.jpg', './app/images/welcome/003.jpg', './app/images/welcome/004.jpg', './app/images/welcome/005.jpg', './app/images/welcome/006.jpg' ],
             'index': 0
           },

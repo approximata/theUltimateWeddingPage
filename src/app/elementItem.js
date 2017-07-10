@@ -8,10 +8,12 @@ const Element = Scroll.Element
 
 const ElementItem = ({ item }) => {
   return (
-    <Element name={ item.title } className={"element " + item.title}>
+    <Element name={ item.title } className={"element " + item.title }>
       <BackgroundImage images={item.images}/>
-      <div className='name'>{item.name}</div>
-      <ContentItem item={item}></ContentItem>
+        <div className={item.name + ' title'} >
+          <h1>{item.name}</h1>
+        </div>
+        <ContentItem item={item}></ContentItem>
     </Element>
   )
 }

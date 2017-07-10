@@ -8,7 +8,7 @@ class BackgroundImage extends React.Component{
     this.state = {'index': 0}
   }
   _onMouseMove(e){
-    let divided = e.screenX / 11
+    let divided = e.screenX / 13
     let index = Math.floor(divided % this.props.images.length)
     console.log(index);
     this.setState({'index': index})
@@ -16,9 +16,7 @@ class BackgroundImage extends React.Component{
   render(){
     return (
       <div className="background-image" onMouseMove={this._onMouseMove.bind(this)}>
-      <p>"sdadasdas"</p>
-      <img src={this.props.images[this.state.index]} alt="currentImg"/>
-
+        <img src={this.props.images[this.state.index]} className="img-responsive" alt="currentImg"/>
       </div>
     )
   }
