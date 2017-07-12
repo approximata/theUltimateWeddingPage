@@ -32,25 +32,23 @@ class Section extends React.Component{
             'subTitle1': ' házasodunk',
             'icon': 'glyphicon glyphicon-heart-empty',
             'content1': 'panni és máté úttörő lagzi fesztivál',
-            'images': ['./app/images/welcome/001.jpg','./app/images/welcome/002.jpg', './app/images/welcome/003.jpg', './app/images/welcome/004.jpg', './app/images/welcome/005.jpg', './app/images/welcome/006.jpg' ],
-            'index': 0
+            'images': ['./app/images/welcome/001.jpg','./app/images/welcome/002.jpg', './app/images/welcome/003.jpg', './app/images/welcome/004.jpg', './app/images/welcome/005.jpg', './app/images/welcome/006.jpg' ]
           },
           {
             'title': 'where',
-            'name': 'holmikor',
-            'subTitle1': 'csillebérci úttörő tábor',
+            'name': '#holmikor',
+            'subTitle1': ' csillebérci úttörő tábor',
+            'icon': 'glyphicon glyphicon-road',
             'content1': '4-es altábor',
             'subTitle2': '2017 július 15 szombat',
             'content2': '17:00 érkezés',
             'link': '',
-            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
-            'index': 0
+            'images': ['./app/images/where/005.jpg','./app/images/where/002.jpg', './app/images/where/003.jpg', './app/images/where/004.jpg']
           },
           {
             'title': 'program',
             'name': 'program',
-            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
-            'index': 0
+            'images': ['./app/images/program/001.jpg', './app/images/program/001.jpg','./app/images/program/002.jpg','./app/images/program/003.jpg','./app/images/program/004.jpg','./app/images/program/006.jpg','./app/images/program/007.jpg','./app/images/program/008.jpg','./app/images/program/009.jpg','./app/images/program/010.jpg','./app/images/program/011.jpg','./app/images/program/012.jpg','./app/images/program/013.jpg','./app/images/program/014.jpg','./app/images/program/015.jpg','./app/images/program/016.jpg','./app/images/program/017.jpg','./app/images/program/018.jpg','./app/images/program/019.jpg','./app/images/program/020.jpg','./app/images/program/021.jpg','./app/images/program/022.jpg','./app/images/program/023.jpg','./app/images/program/024.jpg','./app/images/program/025.jpg']
           },
           {
             'title': 'foodanddrinks',
