@@ -7,15 +7,29 @@
       --welcome-bg-color: #FEB769;
       --welcome-color: #0E4458;
       --where-bg-color: #0E4458;
-      --progrma-bg-color: #A6291C;
+      --program-bg-color: #8EAF8B;
+      /*--food-bg-color: #A6291C;*/
+      --food-bg-color: #0E4458;
       --max-width-inside: 10px;
     }
 
 body {
 	margin: 0 !important;
 	padding: 0 !important;
-  min-width: 770px !important;
   overflow-x: hidden;
+  background: #eee;
+}
+
+nav{
+  max-width: 1400px;
+}
+
+.onepager, nav{
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+
 }
 
 h1{
@@ -55,13 +69,11 @@ p{
   z-index: -1;
 }
 
-img{
+.bg-img{
   object-fit:cover;
   min-height: var(--height);
   max-width: 100%;
   opacity: 0.8;
-  transition: opacity 0.5 linear;
-
 }
 
 .example-enter {
@@ -87,8 +99,8 @@ section{
 }
 
 .title{
-  margin: 10em 5em 5em;
-  padding: 0.1em;
+  margin: 10em 0.2em 1em 6em;
+  padding: 0.2em;
   max-width: var(--max-width-inside);
 }
 
@@ -138,8 +150,8 @@ section .welcome{
 }
 
 section .where{
-  margin-left: 30%;
-  max-width: 70%;
+  margin-left: 20%;
+  max-width: 75%;
   background-color: var(--where-bg-color);
   color: #ffe;
   opacity: 0.8;
@@ -157,16 +169,59 @@ section .where{
 	width: 1000px;
 }*/
 
+
 .program h1{
-  color: #A6291C;
+  color: var(--program-bg-color);
 }
+
+.program .title{
+  width: 40%;
+  float: left;
+}
+
+.program table{
+  float: right;
+  width: 35%;
+  margin-right: 10%;
+  margin-top: 4%;
+  font-size: 1.4em;
+  background-color: var(--program-bg-color);
+  color: #ffe;
+  opacity: 0.8;
+  border-radius: 3px;
+  box-shadow: 2px 5px 11px rgba(0,0,0,0.5);
+  font-family: 'Merriweather', sans-serif;
+}
+
+.program .container{
+  width: 1%;
+  height: 1%;
+  margin: 0;
+  padding: 0;
+
+}
+
 
 .element.program, .active.program{
-	background-color: #A6291C;
+	background-color: var(--program-bg-color);
 }
 
+.foodanddrinks h1{
+  color: var(--food-bg-color);
+}
+
+section .foodanddrinks{
+  margin-left: 70%;
+
+  max-width: 20%;
+  background-color: var(--food-bg-color);
+  color: #ffe;
+  opacity: 0.8;
+}
+
+
 .element.foodanddrinks, .active.foodanddrinks{
-	background-color: #8EAF8B;
+	background-color: var(--food-bg-color);
 }
 
 .element.pictures, .active.pictures{

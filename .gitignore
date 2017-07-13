@@ -58,7 +58,7 @@ typings/
 .env
 
 # images
-/src/app/images/*
+
 
 #config
 /src/config/*

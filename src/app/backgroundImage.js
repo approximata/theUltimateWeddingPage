@@ -21,7 +21,7 @@ class BackgroundImage extends React.Component{
           transitionName="example"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}>
-          <img src={this.props.images[this.state.index]} alt="currentImg"/>
+          <img src={this.props.images[this.state.index]} className="bg-img" alt="currentImg"/>
         </ReactCSSTransitionGroup>
       </div>
     )
