@@ -10,7 +10,7 @@
       --program-bg-color: #8EAF8B;
       --gift-bg-color: #A6291C;
       --food-bg-color: #0E4458;
-      --max-width-inside: 10px;
+      --max-width-inside: 150px;
     }
 
 body {
@@ -35,7 +35,7 @@ nav{
 h1{
 	font-family: 'Fresca', sans-serif;
 	font-size: 9em;
-  max-width: var(--max-width-inside);
+  margin:auto;
 }
 
 h2{
@@ -94,14 +94,16 @@ p{
   transition: opacity 300ms ease-in;
 }
 
-section{
+/*section{
   margin: 1em;
-}
+}*/
 
 .title{
   margin: 10em 0.2em 1em 6em;
   padding: 0.2em;
-  max-width: var(--max-width-inside);
+  max-width: 35%;
+  /*max-width: var(--max-width-inside);*/
+  opacity: 0.9;
 }
 
 
@@ -138,11 +140,11 @@ section .welcome{
 }
 
 .element.welcome, .active.welcome{
-	background-color: #FEB769;
+	background-color: var(--where-bg-color);
 }
 
 .element.where, .active.where{
-	background-color: var(--where-bg-color);
+	background-color: var(--welcome-bg-color);
 }
 
 .where h1{
@@ -203,7 +205,7 @@ section .where{
 
 
 .element.program, .active.program{
-	background-color: var(--program-bg-color);
+	background-color: var(--gift-bg-color);
 }
 
 .foodanddrinks h1{
@@ -212,7 +214,6 @@ section .where{
 
 section .foodanddrinks{
   margin-left: 70%;
-
   max-width: 20%;
   background-color: var(--food-bg-color);
   color: #ffe;
@@ -220,9 +221,19 @@ section .foodanddrinks{
 }
 
 
-.element.foodanddrinks, .active.foodanddrinks{
-	background-color: var(--food-bg-color);
+section .gift{
+  margin-left: 45%;
+  max-width: 45%;
+  background-color: var(--gift-bg-color);
+  color: #ffe;
+  opacity: 0.8;
 }
+
+
+.element.foodanddrinks, .active.foodanddrinks{
+	background-color: var(--program-bg-color);
+}
+
 
 
 .gift h1{
@@ -230,5 +241,21 @@ section .foodanddrinks{
 }
 
 .element.gift, .active.gift{
-	background-color: var(--gift-bg-color);
+	background-color: var(--food-bg-color);
+}
+
+.element.info, .active.info{
+	background-color: var(--welcome-bg-color);
+}
+
+.info table{
+  width: 80%;
+  margin-left: 15%;
+  font-size: 1.4em;
+  background-color: var(--food-bg-color);
+  color: #ffe;
+  opacity: 0.8;
+  border-radius: 3px;
+  box-shadow: 2px 5px 11px rgba(0,0,0,0.5);
+  font-family: 'Merriweather', sans-serif;
 }
