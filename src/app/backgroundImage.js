@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import PropTypes from 'prop-types'
 
 class BackgroundImage extends React.Component{
@@ -17,12 +16,7 @@ class BackgroundImage extends React.Component{
   render(){
     return (
       <div className="background-image" onMouseMove={this._onMouseMove.bind(this)}>
-        <ReactCSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
           <img src={this.props.images[this.state.index]} className="bg-img" alt="currentImg"/>
-        </ReactCSSTransitionGroup>
       </div>
     )
   }

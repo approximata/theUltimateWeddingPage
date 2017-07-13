@@ -33,9 +33,6 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scroll": "^1.5.3",
-    "react-transition-group": "^1.2.0"
-  },
-  "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
