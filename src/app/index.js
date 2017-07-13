@@ -88,10 +88,10 @@ class Section extends React.Component{
             'title': 'info',
             'name': 'info',
             'rows': [
-                {'start':'"panni és máté lagzi" jeligére beengednek. érdems kint parkolni, ha sofőr szolgálattal mennél haza', 'title': 'parkolás', 'icon':'glyphicon glyphicon-scale', 'link':'https://www.google.com/maps/place/Csilleb%C3%A9rci+%C3%BAtt%C3%B6r%C5%91+t%C3%A1bor,+4.+alt%C3%A1bor/@47.4934656,18.9564831,17z/data=!3m1!4b1!4m5!3m4!1s0x4741de554ac5fed1:0x853830e074c02ebb!8m2!3d47.4934656!4d18.9586718?hl=hu'},
-                {'start':'21 Moszkváról - Csillebérc gyermekvasútig', 'title':'bkv oda' , 'icon':'glyphicon glyphicon-plane', 'link':'http://bkk.hu/apps/menetrend/pdf/0210/20161205/1.pdf'},
-                {'start':'990-es normafától', 'icon':'glyphicon glyphicon-plane', 'title':'bkv vissza' , 'link':'http://bkk.hu/apps/menetrend/pdf/9900/20170430/1.pdf'},
-                {'start':'amiben jól érzed magad és nem fázol, érdemes plusz pulcsit, plédet hozni, ja meg esernyőt is', 'title':'dresscode' , 'icon':'glyphicon glyphicon-sunglasses', 'link':'https://www.idokep.hu/idojaras/Budapest'}
+                {'start':'/panni és máté lagzi/ jeligére beengednek. érdems kint parkolni, ha sofőr szolgálattal mennél haza', 'title': 'parkolás', 'icon':'glyphicon glyphicon-scale', 'link':'https://www.google.com/maps/place/Csilleb%C3%A9rci+%C3%BAtt%C3%B6r%C5%91+t%C3%A1bor,+4.+alt%C3%A1bor/@47.4934656,18.9564831,17z/data=!3m1!4b1!4m5!3m4!1s0x4741de554ac5fed1:0x853830e074c02ebb!8m2!3d47.4934656!4d18.9586718?hl=hu'},
+                {'start':'21 Moszkváról - Csillebérc gyermekvasútig', 'title':'bkv oda', 'icon':'glyphicon glyphicon-plane', 'link':'http://bkk.hu/apps/menetrend/pdf/0210/20161205/1.pdf'},
+                {'start':'990-es normafától', 'icon':'glyphicon glyphicon-plane','title':'bkv vissza', 'link':'http://bkk.hu/apps/menetrend/pdf/9900/20170430/1.pdf'},
+                {'start':'amiben jól érzed magad és nem fázol, érdemes plusz pulcsit, plédet hozni, ja meg esernyőt is', 'title':'dresscode', 'icon':'glyphicon glyphicon-sunglasses', 'link':'https://www.idokep.hu/idojaras/Budapest'}
               ],
             'images': ['./app/images/info/001.jpg', './app/images/info/002.jpg']
           },
