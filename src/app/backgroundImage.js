@@ -10,7 +10,6 @@ class BackgroundImage extends React.Component{
   _onMouseMove(e){
     let divided = e.screenX / 13
     let index = Math.floor(divided % this.props.images.length)
-    console.log(index);
     this.setState({'index': index})
   }
   render(){
