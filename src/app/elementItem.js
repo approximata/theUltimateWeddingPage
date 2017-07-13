@@ -11,6 +11,7 @@ const Element = Scroll.Element
 const ElementItem = ({ item }) => {
   return (
     <LazyLoad height={720}>
+
       <Element name={ item.title } className={"element " + item.title }>
         <BackgroundImage images={item.images}/>
           <div className={item.name + ' title'} >
