@@ -35,7 +35,7 @@ class Section extends React.Component{
             'icon': 'glyphicon glyphicon-heart-empty',
             'link': 'https://www.youtube.com/watch?v=BIVHYFNuZg4',
             'content1': 'panni és máté úttörő lagzi fesztivál',
-            'images': ['./app/images/welcome/001.jpg','./app/images/welcome/002.jpg', './app/images/welcome/003.jpg', './app/images/welcome/004.jpg', './app/images/welcome/005.jpg' ],
+            'images': ['./app/images/welcome/001.jpg','./app/images/welcome/002.jpg', './app/images/welcome/003.jpg', './app/images/welcome/004.jpg', './app/images/welcome/006.jpg' ],
             'rows':[]
           },
           {
