@@ -3,8 +3,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Scroll from 'react-scroll'
+import LazyLoad from 'react-lazyload'
 import NavItem from './navItem'
 import ElementItem from './elementItem'
+
 
 require('./css/index.css')
 
@@ -51,7 +53,7 @@ class Section extends React.Component{
           {
             'title': 'program',
             'name': 'program',
-            'images': ['./app/images/program/001.jpg', './app/images/program/001.jpg','./app/images/program/002.jpg','./app/images/program/003.jpg','./app/images/program/004.jpg','./app/images/program/006.jpg','./app/images/program/007.jpg','./app/images/program/008.jpg','./app/images/program/009.jpg','./app/images/program/010.jpg','./app/images/program/011.jpg','./app/images/program/012.jpg','./app/images/program/013.jpg','./app/images/program/014.jpg','./app/images/program/015.jpg','./app/images/program/016.jpg','./app/images/program/017.jpg','./app/images/program/018.jpg','./app/images/program/019.jpg','./app/images/program/020.jpg','./app/images/program/021.jpg','./app/images/program/022.jpg','./app/images/program/023.jpg','./app/images/program/024.jpg','./app/images/program/025.jpg'],
+            'images': ['./app/images/program/011.jpg','./app/images/program/012.jpg','./app/images/program/013.jpg','./app/images/program/014.jpg','./app/images/program/015.jpg','./app/images/program/016.jpg','./app/images/program/017.jpg','./app/images/program/018.jpg','./app/images/program/019.jpg','./app/images/program/020.jpg','./app/images/program/021.jpg','./app/images/program/022.jpg','./app/images/program/023.jpg','./app/images/program/024.jpg','./app/images/program/025.jpg'],
             'rows': [
                 {'start':'17:00', 'title': 'érkezés', 'icon':'glyphicon glyphicon-ok', 'link':''},
                 {'start':'18:00', 'title': 'szertartás', 'icon':'glyphicon glyphicon-star', 'link':''},
@@ -145,9 +147,11 @@ class Section extends React.Component{
             </div>
           </div>
         </nav>
-        <div name="mainElement" >
-          {elementItems}
-        </div>
+        <LazyLoad height={1000}>
+          <div name="mainElement" >
+            {elementItems}
+          </div>
+        </LazyLoad>
         <a onClick={this.scrollToTop}>To the top!</a>
       </div>
     )
