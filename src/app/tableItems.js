@@ -7,7 +7,7 @@ const TableItem = ({ item }) => {
 
   return (
     <tr>
-      <td key='icon'><span className={ item.icon }></span></td>
+      <td key='icon'><span className={item.icon}></span></td>
       <td key={item.title}>{item.title}</td>
       <td key={item.start}>{item.start}</td>
       {link}
