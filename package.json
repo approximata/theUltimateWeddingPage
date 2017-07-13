@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 1234 || --process.env.PORT --history-api-fallback"
+    "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --process.env.PORT --history-api-fallback"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.25.0",
     "eslint": "^4.1.0",
+    "express": "^4.15.3",
     "file-loader": "^0.11.2",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
