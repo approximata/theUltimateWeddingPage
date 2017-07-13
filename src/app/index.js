@@ -81,7 +81,7 @@ class Section extends React.Component{
             'subTitle1': ' nászútra gyűjtünk',
             'link': 'https://www.youtube.com/watch?v=0frskWbzwtE',
             'icon': 'glyphicon glyphicon-piggy-bank',
-            'images': ['./app/images/gift/001.jpg', './app/images/gift/002.jpg', './app/images/gift/003.jpg', './app/images/gift/004.jpg', './app/images/gift/005.jpg', './app/images/gift/006.jpg'],
+            'images': [ './app/images/gift/002.jpg', './app/images/gift/003.jpg', './app/images/gift/004.jpg', './app/images/gift/005.jpg', './app/images/gift/006.jpg'],
             'rows':[]
           },
           {
