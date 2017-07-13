@@ -53,7 +53,7 @@ class Section extends React.Component{
           {
             'title': 'program',
             'name': 'program',
-            'images': ['./app/images/program/011.jpg','./app/images/program/012.jpg','./app/images/program/013.jpg','./app/images/program/014.jpg','./app/images/program/015.jpg','./app/images/program/016.jpg','./app/images/program/017.jpg','./app/images/program/018.jpg','./app/images/program/019.jpg','./app/images/program/020.jpg','./app/images/program/021.jpg','./app/images/program/022.jpg','./app/images/program/023.jpg','./app/images/program/024.jpg','./app/images/program/025.jpg'],
+            'images': ['./app/images/program/p011.jpg','./app/images/program/p012.jpg','./app/images/program/p013.jpg','./app/images/program/p014.jpg','./app/images/program/p015.jpg','./app/images/program/p016.jpg','./app/images/program/p017.jpg','./app/images/program/p018.jpg','./app/images/program/p019.jpg','./app/images/program/p02p0.jpg','./app/images/program/p021.jpg','./app/images/program/p022.jpg','./app/images/program/p023.jpg','./app/images/program/p024.jpg','./app/images/program/p025.jpg'],
             'rows': [
                 {'start':'17:00', 'title': 'érkezés', 'icon':'glyphicon glyphicon-ok', 'link':''},
                 {'start':'18:00', 'title': 'szertartás', 'icon':'glyphicon glyphicon-star', 'link':''},
@@ -81,7 +81,7 @@ class Section extends React.Component{
             'subTitle1': ' nászútra gyűjtünk',
             'link': 'https://www.youtube.com/watch?v=0frskWbzwtE',
             'icon': 'glyphicon glyphicon-piggy-bank',
-            'images': [ './app/images/gift/002.jpg', './app/images/gift/003.jpg', './app/images/gift/004.jpg', './app/images/gift/005.jpg', './app/images/gift/006.jpg'],
+            'images': [ './app/images/gift/g002.jpg', './app/images/gift/g003.jpg', './app/images/gift/g004.jpg', './app/images/gift/g005.jpg', './app/images/gift/g006.jpg'],
             'rows':[]
           },
           {
