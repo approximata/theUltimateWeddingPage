@@ -8,7 +8,7 @@
       --welcome-color: #0E4458;
       --where-bg-color: #0E4458;
       --program-bg-color: #8EAF8B;
-      /*--food-bg-color: #A6291C;*/
+      --gift-bg-color: #A6291C;
       --food-bg-color: #0E4458;
       --max-width-inside: 10px;
     }
@@ -224,10 +224,11 @@ section .foodanddrinks{
 	background-color: var(--food-bg-color);
 }
 
-.element.pictures, .active.pictures{
-	background-color: #FEB769;
+
+.gift h1{
+  color: var(--gift-bg-color);
 }
 
 .element.gift, .active.gift{
-	background-color: #0E4458;
+	background-color: var(--gift-bg-color);
 }

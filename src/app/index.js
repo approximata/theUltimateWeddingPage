@@ -75,7 +75,7 @@ class Section extends React.Component{
           {
             'title': 'gift',
             'name': 'ajándék',
-            'images': ['./images/welcome/002.jpg', './images/welcome/003.jpg'],
+            'images': ['./app/images/gift/001.jpg', './app/images/gift/002.jpg', './app/images/gift/003.jpg', './app/images/gift/004.jpg', './app/images/gift/005.jpg', './app/images/gift/006.jpg'],
             'rows':[]
           },
           {
