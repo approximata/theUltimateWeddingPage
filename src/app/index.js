@@ -53,7 +53,7 @@ class Section extends React.Component{
           {
             'title': 'program',
             'name': 'program',
-            'images': ['./app/images/program/p011.jpg','./app/images/program/p012.jpg','./app/images/program/p013.jpg','./app/images/program/p014.jpg','./app/images/program/p015.jpg','./app/images/program/p016.jpg','./app/images/program/p017.jpg','./app/images/program/p018.jpg','./app/images/program/p019.jpg','./app/images/program/p02p0.jpg','./app/images/program/p021.jpg','./app/images/program/p022.jpg','./app/images/program/p023.jpg','./app/images/program/p024.jpg','./app/images/program/p025.jpg'],
+            'images': ['./app/images/program/p022.jpg','./app/images/program/p023.jpg','./app/images/program/p006.jpg','./app/images/program/p005.jpg','./app/images/program/p004.jpg','./app/images/program/p003.jpg','./app/images/program/p002.jpg','./app/images/program/p001.jpg','./app/images/program/p011.jpg','./app/images/program/p012.jpg','./app/images/program/p013.jpg','./app/images/program/p014.jpg','./app/images/program/p015.jpg','./app/images/program/p016.jpg','./app/images/program/p017.jpg','./app/images/program/p018.jpg','./app/images/program/p019.jpg','./app/images/program/p020.jpg','./app/images/program/p021.jpg','./app/images/program/p024.jpg','./app/images/program/p025.jpg'],
             'rows': [
                 {'start':'17:00', 'title': 'érkezés', 'icon':'glyphicon glyphicon-ok', 'link':''},
                 {'start':'18:00', 'title': 'szertartás', 'icon':'glyphicon glyphicon-star', 'link':''},
@@ -93,7 +93,7 @@ class Section extends React.Component{
                 {'start':'990-es normafától', 'icon':'glyphicon glyphicon-plane','title':'bkv vissza', 'link':'http://bkk.hu/apps/menetrend/pdf/9900/20170430/1.pdf'},
                 {'start':'amiben jól érzed magad és nem fázol, érdemes plusz pulcsit, plédet hozni, ja meg esernyőt is', 'title':'dresscode', 'icon':'glyphicon glyphicon-sunglasses', 'link':'https://www.idokep.hu/idojaras/Budapest'}
               ],
-            'images': ['./app/images/info/001.jpg', './app/images/info/002.jpg']
+            'images': ['./app/images/info/001.jpg', './app/images/info/002.jpg', './app/images/info/003.jpg']
           },
         ],
       }
