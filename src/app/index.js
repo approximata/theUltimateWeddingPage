@@ -31,16 +31,16 @@ class Section extends React.Component{
         items: [
           { 'title': 'welcome',
             'name': 'welcome',
-            'subTitle1': ' házasodunk',
+            'subTitle1': ' összeházasodtunk!',
             'icon': 'glyphicon glyphicon-heart-empty',
             'link': 'https://www.youtube.com/watch?v=BIVHYFNuZg4',
-            'content1': 'panni és máté úttörő lagzi fesztivál',
+            'content1': 'panni és máté úttörő lagzi fesztivál volt',
             'images': ['./app/images/welcome/001.jpg','./app/images/welcome/002.jpg', './app/images/welcome/003.jpg', './app/images/welcome/004.jpg', './app/images/welcome/006.jpg' ],
             'rows':[]
           },
           {
             'title': 'where',
-            'name': 'holmikor',
+            'name': 'holmikorvolt',
             'subTitle1': ' csillebérci úttörő tábor',
             'icon': 'glyphicon glyphicon-map-marker',
             'content1': '4-es altábor',
@@ -48,6 +48,15 @@ class Section extends React.Component{
             'content2': '17:00 érkezés',
             'link': 'https://www.google.com/maps/place/Csilleb%C3%A9rci+%C3%BAtt%C3%B6r%C5%91+t%C3%A1bor,+4.+alt%C3%A1bor/@47.4934656,18.9564831,17z/data=!3m1!4b1!4m5!3m4!1s0x4741de554ac5fed1:0x853830e074c02ebb!8m2!3d47.4934656!4d18.9586718?hl=hu',
             'images': ['./app/images/where/005.jpg','./app/images/where/002.jpg', './app/images/where/003.jpg', './app/images/where/004.jpg'],
+            'rows':[]
+          },
+          {
+            'title': 'images',
+            'name': 'képek',
+            'subTitle1': ' ide fel kellene töltögetni őket',
+            'icon': 'glyphicon glyphicon-map-marker',
+            'link': 'https://photos.app.goo.gl/7fEobEmWMw8NHVeE2',
+            'images': ['./app/images/images/img00025.jpg','./app/images/images/img00001.jpg','./app/images/images/img00002.jpg','./app/images/images/img00003.jpg','./app/images/images/img00004.jpg','./app/images/images/img00005.jpg','./app/images/images/img00006.jpg','./app/images/images/img00007.jpg','./app/images/images/img00008.jpg','./app/images/images/img00009.jpg','./app/images/images/img00010.jpg','./app/images/images/img00011.jpg','./app/images/images/img00012.jpg','./app/images/images/img00013.jpg','./app/images/images/img00014.jpg','./app/images/images/img00015.jpg','./app/images/images/img00016.jpg','./app/images/images/img00017.jpg','./app/images/images/img00018.jpg','./app/images/images/img00019.jpg','./app/images/images/img00020.jpg','./app/images/images/img00021.jpg','./app/images/images/img00022.jpg','./app/images/images/img00023.jpg','./app/images/images/img00024.jpg','./app/images/images/img00025.jpg','./app/images/images/img00026.jpg','./app/images/images/img00027.jpg','./app/images/images/img00028.jpg','./app/images/images/img00029.jpg','./app/images/images/img00030.jpg','./app/images/images/img00031.jpg','./app/images/images/img00032.jpg','./app/images/images/img00033.jpg','./app/images/images/img00034.jpg','./app/images/images/img00035.jpg'],
             'rows':[]
           },
           {
@@ -63,22 +72,22 @@ class Section extends React.Component{
                 {'start':'19:00', 'title': 'dj suhaid', 'icon':'glyphicon glyphicon-cd', 'link':'https://www.mixcloud.com/suhaid/igy-mulat-egy-beates-magyar-ur/'},
                 {'start':'20:00', 'title': 'quiz', 'icon':'glyphicon glyphicon-question-sign', 'link':''},
                 {'start':'22:00', 'title': 'torta', 'icon':'glyphicon glyphicon-ice-lolly-tasted', 'link':''},
-                {'start':'23:00', 'title': 'magic mosquitoz', 'icon':'glyphicon glyphicon-sunglasses', 'link':'https://www.youtube.com/watch?v=IzIpXhomSyU'},
+                {'start':'22:30', 'title': 'magic mosquitoz', 'icon':'glyphicon glyphicon-sunglasses', 'link':'https://www.youtube.com/watch?v=IzIpXhomSyU'},
                 {'start':'00:30', 'title': 'sanyibácsideszép', 'icon':'glyphicon glyphicon-king', 'link':''},
-                {'start':'01:30', 'title': 'jóskapista', 'icon':'glyphicon glyphicon-headphones', 'link':''}
+                {'start':'01:30', 'title': 'jóskapista elmaradt :(', 'icon':'glyphicon glyphicon-headphones', 'link':''}
                 ]
           },
           {
             'title': 'foodanddrinks',
             'name': 'kajapia',
             'images': ['./app/images/food/001.jpg', './app/images/food/002.jpg', './app/images/food/003.jpg', './app/images/food/004.jpg', './app/images/food/005.jpg'],
-            'subTitle1': 'lesz',
+            'subTitle1': 'volt',
             'rows':[]
           },
           {
             'title': 'gift',
             'name': 'ajándék',
-            'subTitle1': ' nászútra gyűjtünk',
+            'subTitle1': ' nászútra tapsoltuk el',
             'link': 'https://www.youtube.com/watch?v=0frskWbzwtE',
             'icon': 'glyphicon glyphicon-piggy-bank',
             'images': [ './app/images/gift/g002.jpg', './app/images/gift/g003.jpg', './app/images/gift/g004.jpg', './app/images/gift/g005.jpg', './app/images/gift/g006.jpg'],
