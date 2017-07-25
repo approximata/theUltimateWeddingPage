@@ -219,16 +219,18 @@ section .where{
   color: var(--food-bg-color);
 }
 
-section .foodanddrinks{
+/*section .foodanddrinks{
   margin-left: 70%;
   max-width: 20%;
   background-color: var(--food-bg-color);
   color: #ffe;
   opacity: 0.8;
-}
+}*/
 
 
 section .gift{
+  margin-top: 0;
+  padding-top: 0;
   margin-left: 45%;
   max-width: 45%;
   background-color: var(--gift-bg-color);
@@ -240,7 +242,6 @@ section .gift{
 .element.foodanddrinks, .active.foodanddrinks{
 	background-color: var(--program-bg-color);
 }
-
 
 
 .gift h1{
